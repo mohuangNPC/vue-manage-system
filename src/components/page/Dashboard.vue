@@ -6,26 +6,27 @@
                     <div class="user-info">
                         <img src="../../assets/img/img.jpg" class="user-avator" alt />
                         <div class="user-info-cont">
-                            <div class="user-info-name">{{name}}</div>
+                            <div class="user-info-name">魔皇</div>
+<!--                            {{name}}-->
                             <div>{{role}}</div>
                         </div>
                     </div>
                     <div class="user-info-list">
                         上次登录时间：
-                        <span>2019-11-01</span>
+                        <span>2020-06-8</span>
                     </div>
                     <div class="user-info-list">
                         上次登录地点：
-                        <span>东莞</span>
+                        <span>北京</span>
                     </div>
                 </el-card>
                 <el-card shadow="hover" style="height:252px;">
                     <div slot="header" class="clearfix">
-                        <span>语言详情</span>
-                    </div>Vue
-                    <el-progress :percentage="71.3" color="#42b983"></el-progress>JavaScript
-                    <el-progress :percentage="24.1" color="#f1e05a"></el-progress>CSS
-                    <el-progress :percentage="13.7"></el-progress>HTML
+                        <span>MC职业详情</span>
+                    </div>炼金
+                    <el-progress :percentage="71.3" color="#42b983"></el-progress>骑士
+                    <el-progress :percentage="24.1" color="#f1e05a"></el-progress>战士
+                    <el-progress :percentage="13.7"></el-progress>刺客
                     <el-progress :percentage="5.9" color="#f56c6c"></el-progress>
                 </el-card>
             </el-col>
@@ -36,7 +37,7 @@
                             <div class="grid-content grid-con-1">
                                 <i class="el-icon-lx-people grid-con-icon"></i>
                                 <div class="grid-cont-right">
-                                    <div class="grid-num">1234</div>
+                                    <div class="grid-num">1</div>
                                     <div>用户访问量</div>
                                 </div>
                             </div>
@@ -47,7 +48,7 @@
                             <div class="grid-content grid-con-2">
                                 <i class="el-icon-lx-notice grid-con-icon"></i>
                                 <div class="grid-cont-right">
-                                    <div class="grid-num">321</div>
+                                    <div class="grid-num">2</div>
                                     <div>系统消息</div>
                                 </div>
                             </div>
@@ -58,7 +59,7 @@
                             <div class="grid-content grid-con-3">
                                 <i class="el-icon-lx-goods grid-con-icon"></i>
                                 <div class="grid-cont-right">
-                                    <div class="grid-num">5000</div>
+                                    <div class="grid-num">2</div>
                                     <div>数量</div>
                                 </div>
                             </div>
@@ -119,27 +120,27 @@ export default {
             name: localStorage.getItem('ms_username'),
             todoList: [
                 {
-                    title: '今天要修复100个bug',
+                    title: '手持装备右键修复npc时武器可能被吞',
                     status: false
                 },
                 {
-                    title: '今天要修复100个bug',
+                    title: '玩家右键转职npc，已转职的玩家也会被传送',
                     status: false
                 },
                 {
-                    title: '今天要写100行代码加几个bug吧',
+                    title: '掉落伤害太高',
                     status: false
                 },
                 {
-                    title: '今天要修复100个bug',
+                    title: 'vip玩家无法打开vip商店',
                     status: false
                 },
                 {
-                    title: '今天要修复100个bug',
+                    title: '重生点保护机制',
                     status: true
                 },
                 {
-                    title: '今天要写100行代码加几个bug吧',
+                    title: '经验池经验数量太高',
                     status: true
                 }
             ],
@@ -176,21 +177,21 @@ export default {
             options: {
                 type: 'bar',
                 title: {
-                    text: '最近一周各品类销售图'
+                    text: '最近一周玩家问题的分类'
                 },
                 xRorate: 25,
                 labels: ['周一', '周二', '周三', '周四', '周五'],
                 datasets: [
                     {
-                        label: '家电',
+                        label: 'Bug',
                         data: [234, 278, 270, 190, 230]
                     },
                     {
-                        label: '百货',
+                        label: '功能',
                         data: [164, 178, 190, 135, 160]
                     },
                     {
-                        label: '食品',
+                        label: '优化',
                         data: [144, 198, 150, 235, 120]
                     }
                 ]
@@ -198,20 +199,20 @@ export default {
             options2: {
                 type: 'line',
                 title: {
-                    text: '最近几个月各品类销售趋势图'
+                    text: '玩家对各方面改进满意度趋势图'
                 },
                 labels: ['6月', '7月', '8月', '9月', '10月'],
                 datasets: [
                     {
-                        label: '家电',
+                        label: 'Bug',
                         data: [234, 278, 270, 190, 230]
                     },
                     {
-                        label: '百货',
+                        label: '功能',
                         data: [164, 178, 150, 135, 160]
                     },
                     {
-                        label: '食品',
+                        label: '优化',
                         data: [74, 118, 200, 235, 90]
                     }
                 ]

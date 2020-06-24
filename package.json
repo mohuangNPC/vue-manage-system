@@ -2,6 +2,7 @@
   "name": "vue-manage-system",
   "version": "4.2.0",
   "private": true,
+  "homepage":"https://mohuangNPC.github.io/vue-manage-system",
   "scripts": {
     "dev": "npm run serve",
     "serve": "vue-cli-service serve",
